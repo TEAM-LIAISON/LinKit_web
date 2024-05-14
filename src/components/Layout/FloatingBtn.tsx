@@ -1,13 +1,16 @@
+'use client'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
 
 export default function FloatingBtn() {
   return (
-    <Link href={'https://tally.so/r/wLd6ZG'}>
-      <nav className="w-full bg-[#1D2125]   flex-shrink fixed bottom-0 z-[100]">
-        <nav className="mx-auto flex max-w-full items-center justify-center p-3 lg:p-5 lg:pl-40 lg:pr-20 cursor-pointer">
-          <span className="font-semibold text-[#fff]">1분 만에 사전신청 하기</span>
-        </nav>
-      </nav>
+    <Link href={'https://tally.so/r/wLd6ZG'} className="flex justify-center">
+      <motion.nav
+        className="w-[75%] lg:w-[46.9rem] h-[3.3rem] bg-gradient-floating flex justify-center items-center flex-shrink fixed bottom-4 z-[100] rounded-[1.1875rem] border-[1.5px] border-[#7EA5F8]"
+        whileHover={{ filter: 'brightness(1.05)' }}
+      >
+        <span className="font-bold  text-[#FCFCFD]">1분 만에 사전신청 하기</span>
+      </motion.nav>
     </Link>
   )
 }

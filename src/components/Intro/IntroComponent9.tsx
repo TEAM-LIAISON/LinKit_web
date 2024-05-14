@@ -58,12 +58,12 @@ export default function IntroComponent9() {
             <span className="w-full text-xs lg:text-[0.93rem] text-grey50 pt-3 lg:pt-6 pl-2">
               한가영님에게 매칭 요청을 보내기 위한 메시지를 적어주세요.
             </span>
-            <div className="w-full h-[7.9rem] p-[0.81rem] bg-grey10 rounded-lg mt-3 text-[0.6rem] lg:text-[0.81rem]">
+            <div className="w-full h-[7.9rem] p-[0.81rem] bg-grey10 rounded-lg mt-1 text-[0.6rem] lg:text-[0.81rem]">
               안녕하세요, 프론트엔드 개발자 모집한다는 글 보고 연락드립니다. 저는 현재 대학생이지만, 2년 정도
               스타트업에서 일을 해 본 경력이 있으며, IoT 솔루션에 관심이 많습니다.
             </div>
 
-            <div className="text-xs lg:text-sm w-full h-[3.3rem] bg-grey90 rounded-lg mt-3 flex items-center justify-center text-[#fff] font-bold  cursor-pointer">
+            <div className="text-xs lg:text-sm w-full h-[3.3rem] bg-grey90 rounded-lg mt-3 flex items-center justify-center text-[#fff] font-bold ">
               매칭 요청 보내기
             </div>
           </div>

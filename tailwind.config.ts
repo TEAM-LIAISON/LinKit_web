@@ -40,6 +40,7 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'gradient-to-b': 'linear-gradient(180deg, #F1F3F7 19.19%, rgba(252, 252, 253, 0.00) 112.86%)',
+        'gradient-floating': 'linear-gradient(180deg, #5F8DF1 0%, #2563EB 122.86%)',
       },
       boxShadow: {
         'soft-shadow': '0px 3px 50px 0px rgba(59, 59, 75, 0.05)',

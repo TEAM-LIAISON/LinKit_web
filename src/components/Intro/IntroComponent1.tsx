@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
+import Link from 'next/link'
 type PositionKey = '개발자' | '디자이너' | '마케터' | '기획자' | '리서처' | '비즈니스'
 
 export default function IntroComponentTemp() {
@@ -58,7 +59,7 @@ export default function IntroComponentTemp() {
           initial={{ y: '100%' }}
           animate={{ y: '0%' }}
           exit={{ y: '-100%' }}
-          transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+          transition={{ type: 'spring', stiffness: 260, damping: 30 }}
           className="absolute inset-0 z-0 sm:flex hidden"
         >
           <Image src={positions[selectedRole].bgImage} alt="line" fill objectFit="cover" className="" />\
@@ -128,14 +129,16 @@ export default function IntroComponentTemp() {
                 </motion.span>
               </div>
             </div>
-            <div className="flex items-center gap-4 md:mt-8 cursor-pointer justify-center w-[14.25rem] h-[63px] lg:h-[4.4rem] bg-[#2F353C] rounded-[3.75rem]">
-              <span className="text-sm lg:text-lg text-[#fff]">사전 신청하러 가기</span>
-              <Image src={'/assets/icons/right_arrow.svg'} width={17} height={1} alt="right_arrow" />
-            </div>
+            <Link href={'https://nn4e1.channel.io/home'}>
+              <div className="flex items-center gap-4 md:mt-8 cursor-pointer justify-center w-[14.25rem] h-[63px] lg:h-[4.4rem] bg-[#2F353C] rounded-[3.75rem]">
+                <span className="text-sm lg:text-lg text-[#fff]">사전 신청하러 가기</span>
+                <Image src={'/assets/icons/right_arrow.svg'} width={17} height={1} alt="right_arrow" />
+              </div>
+            </Link>
           </div>
         </motion.div>
 
-        <div className="flex justify-between mt-7 shadow-gray-07 items-center px-7 z-50 w-[88%] md:w-[39.5rem] h-[3.68rem] bg-[rgba(79, 81, 98, 0.07)] rounded-[3.91rem] backdrop-blur-2xl">
+        <div className="flex justify-between mt-5 shadow-gray-07 items-center px-7 z-50 w-[88%] md:w-[39.5rem] h-[3.68rem] bg-[rgba(79, 81, 98, 0.07)] rounded-[3.91rem] backdrop-blur-2xl">
           {Object.keys(positions).map((role) => (
             <span
               key={role}

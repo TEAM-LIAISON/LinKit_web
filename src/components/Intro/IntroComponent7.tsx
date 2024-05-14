@@ -53,27 +53,36 @@ export default function IntroComponent7() {
           <div className="sm:w-[41rem] flex flex-col gap-4 items-center ">
             <div className="flex flex-col justify-start items-center gap-4 w-full">
               <div className="text-lg lg:text-[1.36rem] font-bold flex justify-start w-full">내가 받은 매칭</div>
-              <Image
-                src={'/assets/intro/request/request1.png'}
-                width={652}
-                height={113}
-                alt="request1"
-                className="shadow-alarm-shadow md:flex hidden"
-              />
-              <Image
-                src={'/assets/intro/request/request2.png'}
-                width={537}
-                height={80}
-                alt="request1"
-                className="shadow-alarm-shadow md:flex hidden"
-              />
-              <Image
-                src={'/assets/intro/request/request3.png'}
-                width={503}
-                height={74}
-                alt="request1"
-                className="shadow-alarm-shadow md:flex hidden"
-              />
+
+              <motion.div whileHover={{ scale: 1.02 }} transition={{ type: 'spring', stiffness: 260, damping: 20 }}>
+                <Image
+                  src={'/assets/intro/request/request1.png'}
+                  width={652}
+                  height={113}
+                  alt="request1"
+                  className="shadow-alarm-shadow md:flex hidden"
+                />
+              </motion.div>
+
+              <motion.div whileHover={{ scale: 1.02 }} transition={{ type: 'spring', stiffness: 260, damping: 20 }}>
+                <Image
+                  src={'/assets/intro/request/request2.png'}
+                  width={537}
+                  height={80}
+                  alt="request1"
+                  className="shadow-alarm-shadow md:flex hidden"
+                />
+              </motion.div>
+
+              <motion.div whileHover={{ scale: 1.02 }} transition={{ type: 'spring', stiffness: 260, damping: 20 }}>
+                <Image
+                  src={'/assets/intro/request/request3.png'}
+                  width={503}
+                  height={74}
+                  alt="request1"
+                  className="shadow-alarm-shadow md:flex hidden"
+                />
+              </motion.div>
 
               {/* 모바알 */}
               <Image

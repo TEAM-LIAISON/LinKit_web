@@ -28,8 +28,8 @@ export default function IntroLayout() {
   return (
     <div className="flex flex-col w-full h-screen  overflow-y-scroll snap-y snap-mandatory">
       <IntroComponent1 />
-      <IntroComponent2 />
       <IntroComponent3 />
+      <IntroComponent2 />
       <IntroComponent4 />
       <IntroComponent5 />
       <IntroComponent6 />

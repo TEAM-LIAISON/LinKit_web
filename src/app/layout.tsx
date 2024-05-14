@@ -6,7 +6,7 @@ import Footer from '@/components/Layout/Footer'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'LinKit',
+  title: 'Linkit',
   description: '',
   icons: {
     icon: '/logo.png',

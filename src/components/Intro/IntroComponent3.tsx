@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
 
 export default function IntroComponent3() {
   return (
@@ -28,15 +29,14 @@ export default function IntroComponent3() {
           }}
         >
           <div className="flex flex-col md:mb-0 mb-16 ">
-            <span className="text-[1.6rem] lg:text-[2.62rem] font-bold lg:pb-4 text-grey100">
+            <span className="text-center lg:text-right text-sm lg:text-xl text-grey100">올해 방학엔 스펙 뭐 쌓지?</span>
+            <span className="text-[1.6rem] text-center lg:text-[2.62rem] font-bold lg:pb-4 text-grey100">
               목표를 향해 함께 모여요
             </span>
 
             <span className="test-sm lg:text-[1.25rem] font-medium text-grey70 pt-5 text-center lg:text-right">
-              같은 목표를 가진 사람들과 함께하세요.
-              <br />
-              원하는 프로젝트에 따라, <br />
-              실패없는 팀빌딩을 이루어드립니다.
+              공모전, 대회, 프로젝트, 창업팀까지 <br />
+              다양한 목표의 팀빌딩을 링킷에서 할 수 있어요
               <br />
             </span>
           </div>
@@ -44,7 +44,9 @@ export default function IntroComponent3() {
             whileHover={{ scale: 1.1 }}
             className="w-[15.5rem] h-[3rem] md:w-[17.18rem] md:h-[4.43rem] gap-4 mt-12 flex justify-center items-center bg-[#2F353C] text-[#fff] rounded-[3.75rem] cursor-pointer"
           >
-            <span className="font-medium text-sm md:text-base ml-4">7월에 진행되는 프로젝트 찾기</span>
+            <Link href={'https://linkit.oopy.io/'}>
+              <span className="font-medium text-sm md:text-base ml-4">7월에 진행되는 프로젝트 찾기</span>
+            </Link>
             <Image src={'/assets/icons/right_arrow.svg'} width={17} height={1} alt="right arrow" />
           </motion.div>
         </motion.div>

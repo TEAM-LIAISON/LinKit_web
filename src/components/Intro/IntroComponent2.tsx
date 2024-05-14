@@ -17,26 +17,32 @@ export default function IntroComponent2() {
                 ease: 'easeOut',
               }}
             >
-              <span className="text-[1.6rem] lg:text-[2.625rem] font-bold text-center lg:text-left lg:mt-24 lg:leading-[3.4rem]">
-                자유로운
+              <span className="text-center lg:text-right text-sm lg:text-xl text-grey100 lg:mt-24 lg:pb-3">
+                매번 팀원 구하다가 흐지부지
+              </span>
+              <span className="text-[1.6rem] lg:text-[2.625rem] font-bold text-center lg:text-left lg:leading-[3.4rem]">
+                링킷으로 나를 PR하면
                 <br />
-                자기 PR의 공간
+                빠르게 팀을 꾸릴 수 있어요
               </span>
               <span className="text-sm lg:text-[1.25rem] font-medium text-grey70 pt-3 lg:pt-8 md:leading-6 lg:leading-8 text-center lg:text-left">
-                링킷에서 자유롭게 나를 홍보하세요!
-                <br />
-                공모전, 대회, 프로젝트, 창업팀까지 다양한 팀빌딩이 가능해요.
+                목표가 통하는 사람들과 자유롭게 소통하면서 <br />
+                성공적인 팀빌딩으로 이어질 수 있습니다.{' '}
               </span>
             </motion.div>
 
             <motion.div
               className="md:w-1/2 "
               initial={{ opacity: 0, y: 30 }}
+              whileHover={{ scale: 1.02 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{
                 delay: 0.1,
                 duration: 0.9,
                 ease: 'easeOut',
+                type: 'spring',
+                stiffness: 260,
+                damping: 20,
               }}
             >
               <Image

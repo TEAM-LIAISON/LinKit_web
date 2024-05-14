@@ -39,7 +39,11 @@ export default function IntroComponent6() {
           {/* right */}
           <div className="lg:w-1/2 h-full flex gap-3 pt-6 lg:pt-2 items-center justify-center">
             {/* profile 1 */}
-            <div className="w-[14rem] lg:w-[17.5rem] h-[18rem] lg:h-[24.8rem] p-6 flex flex-col rounded-xl shadow-card-shadow bg-[#fff] mb-20">
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+              className="w-[14rem] lg:w-[17.5rem] h-[18rem] lg:h-[24.8rem] p-6 flex flex-col rounded-xl shadow-card-shadow bg-[#fff] mb-20"
+            >
               <span className="text-base lg:text-[1.23rem] font-bold lg:leading-7">
                 창업경진대회 기술 담당
                 <br />
@@ -69,17 +73,22 @@ export default function IntroComponent6() {
               </div>
 
               <div className="flex w-full justify-between pt-2 lg:pt-4 text-[0.6rem] lg:text-xs">
-                <div className="w-20 lg:w-28 h-7 lg:h-10  rounded-md bg-grey10 flex justify-center items-center text-grey90 font-semibold cursor-pointer">
+                <div className="w-20 lg:w-28 h-7 lg:h-10  rounded-md bg-grey10 flex justify-center items-center text-grey90 font-semibold ">
                   찜하기
                 </div>
-                <div className="w-20 lg:w-28 h-7 lg:h-10  rounded-md bg-grey100 flex justify-center items-center text-[#fff] font-semibold cursor-pointer">
+                <div className="w-20 lg:w-28 h-7 lg:h-10  rounded-md bg-grey100 flex justify-center items-center text-[#fff] font-semibold ">
                   연락하기
                 </div>
               </div>
-            </div>
+            </motion.div>
 
             {/* profile 2*/}
-            <div className="hidden w-[17.5rem] h-[24.8rem] p-6 lg:flex flex-col rounded-xl shadow-card-shadow bg-[#fff] mt-20">
+
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+              className="hidden w-[17.5rem] h-[24.8rem] p-6 lg:flex flex-col rounded-xl shadow-card-shadow bg-[#fff] mt-20"
+            >
               <span className="text-[1.15rem] font-bold ">
                 공공 데이터 공모전 나가실 분
                 <br />
@@ -105,14 +114,14 @@ export default function IntroComponent6() {
               </div>
 
               <div className="flex w-full justify-between pt-4 text-xs">
-                <div className="w-28 h-10 rounded-md bg-grey10 flex justify-center items-center text-grey90 font-semibold cursor-pointer">
+                <div className="w-28 h-10 rounded-md bg-grey10 flex justify-center items-center text-grey90 font-semibold ">
                   찜하기
                 </div>
-                <div className="w-28 h-10 rounded-md bg-grey100 flex justify-center items-center text-[#fff] font-semibold cursor-pointer">
+                <div className="w-28 h-10 rounded-md bg-grey100 flex justify-center items-center text-[#fff] font-semibold ">
                   연락하기
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="hidden w-full lg:flex gap-12 justify-end pb-12 pt-5 pr-60">
