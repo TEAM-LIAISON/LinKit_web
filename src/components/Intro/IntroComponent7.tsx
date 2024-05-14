@@ -7,7 +7,7 @@ export default function IntroComponent7() {
       style={{
         backgroundImage: 'linear-gradient(180deg, #F1F3F7 19.19%, rgba(252, 252, 253, 0) 112.86%))',
       }}
-      className="bg-white relative  flex h-screen min-h-screen w-full  snap-mandatory snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center"
+      className="relative flex  h-screen min-h-screen w-full snap-mandatory  snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-white bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center"
     >
       <Image src={'/assets/intro/section7bg.png'} alt="line" fill objectFit="cover" className="z-0 hidden md:flex" />
 
