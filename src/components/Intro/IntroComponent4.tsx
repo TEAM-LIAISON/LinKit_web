@@ -83,7 +83,7 @@ export default function IntroComponent4() {
               </div>
             </Link>
 
-            <Link href={'https://tally.so/r/wLd6ZG'}>
+            <Link href={'https://tally.so/r/w7dOW6'}>
               <div className="w-full lg:w-[23rem] py-3 lg:h-[5.125rem] bg-grey20 bg-opacity-80 flex justify-center items-center text-sm lg:text-lg font-normal rounded-md">
                 2. 1분만에 사전신청 하기
               </div>
