@@ -8,6 +8,9 @@ export default function IntroComponent3() {
     <div
       // style={{ backgroundImage: 'url("/assets/intro/section3bg.png")' }}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 4147c61 (fix: StyleFix)
       className="relative flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always items-center justify-center overflow-hidden overflow-x-auto bg-[#F0F2F6] bg-opacity-50 bg-cover bg-no-repeat"
     >
       {/* PC 배경 */}
@@ -34,6 +37,7 @@ export default function IntroComponent3() {
         <motion.div
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           className="flex h-screen flex-col items-center justify-center py-20 lg:mr-40 lg:mt-16 lg:items-end lg:justify-center"
 =======
           className="flex h-screen flex-col items-center justify-between py-20 lg:mr-40 lg:mt-16 lg:items-end lg:justify-center"
@@ -41,6 +45,9 @@ export default function IntroComponent3() {
 =======
           className="flex h-screen flex-col items-center justify-start py-20 lg:mr-40 lg:mt-16 lg:items-end lg:justify-center"
 >>>>>>> b55760a (fix: QA6 apply)
+=======
+          className="flex h-screen flex-col items-center justify-center py-20 lg:mr-40 lg:mt-16 lg:items-end lg:justify-center"
+>>>>>>> 4147c61 (fix: StyleFix)
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -49,6 +56,7 @@ export default function IntroComponent3() {
             ease: 'easeOut',
           }}
         >
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
           <div className="mb-7 mt-40 flex flex-col lg:mb-16">
@@ -60,6 +68,9 @@ export default function IntroComponent3() {
 =======
           <div className="mb-7 flex flex-col md:mb-0 lg:mb-16">
 >>>>>>> b55760a (fix: QA6 apply)
+=======
+          <div className="mb-7 mt-40 flex flex-col lg:mb-16">
+>>>>>>> 4147c61 (fix: StyleFix)
             <span className="text-center text-sm text-grey100 lg:text-right lg:text-xl">올해 방학엔 스펙 뭐 쌓지?</span>
             <span className="text-center text-[1.6rem] font-bold text-grey100 lg:pb-4 lg:text-[2.62rem]">
               목표를 향해 함께 모여요
