@@ -33,7 +33,7 @@ export default function IntroComponent7() {
         <div className="flex items-center justify-center lg:h-full lg:w-1/2">
           <div className=" flex flex-col items-center pb-8 lg:items-start lg:pb-20">
             <div className="w-[9rem] rounded-lg bg-grey20 p-1 text-center text-sm lg:w-[9.75rem] lg:p-[0.6rem] lg:text-base">
-              2 간결한 매칭 서비스
+              2. 간결한 매칭 서비스
             </div>
             <span className="pt-3 text-center text-[1.6rem] font-bold lg:text-left lg:text-[2.62rem] lg:leading-[3.625rem]">
               프로필만 등록하면

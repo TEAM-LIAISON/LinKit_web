@@ -18,7 +18,7 @@ export default function IntroComponent9() {
         <div className="flex items-center justify-start lg:h-full lg:w-1/2">
           <div className=" flex flex-col items-center pb-4 lg:items-start lg:pb-20">
             <div className="w-[9rem] rounded-lg bg-grey20 p-1 text-center text-sm lg:w-[11.2rem] lg:p-[0.6rem] lg:text-base">
-              4 체계적인 매칭 시스템
+              4. 체계적인 매칭 시스템
             </div>
             <span className="pt-2 text-center text-[1.6rem] font-bold lg:text-left lg:text-[2.62rem] lg:leading-[3.625rem]">
               함께 팀을 이루고 싶은 사람에게
