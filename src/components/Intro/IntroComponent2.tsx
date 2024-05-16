@@ -4,7 +4,11 @@ import { motion } from 'framer-motion'
 export default function IntroComponent2() {
   return (
     <>
+<<<<<<< HEAD
       <div className="relative flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center overflow-hidden overflow-x-auto bg-[#F0F2F6] bg-white bg-opacity-50 bg-cover bg-no-repeat">
+=======
+      <div className="bg-white relative flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center overflow-hidden overflow-x-auto bg-[#F0F2F6] bg-opacity-50 bg-cover bg-no-repeat">
+>>>>>>> 8144e1e (fix: 5차 QA 수정)
         <div className="flex h-[80%] w-full flex-col items-center bg-[#fff] md:pt-28 lg:justify-center lg:pt-32">
           <div className="flex h-full w-full flex-col items-center justify-center pt-20 md:flex-row lg:relative lg:w-[1200px] lg:items-start">
             <motion.div

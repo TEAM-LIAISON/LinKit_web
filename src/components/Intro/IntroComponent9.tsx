@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 
 export default function IntroComponent9() {
   return (
-    <div className="flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-white bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center">
+    <div className="flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center overflow-hidden overflow-x-auto bg-white bg-opacity-50 bg-cover bg-no-repeat pt-20">
       <motion.div
-        className="flex flex-col lg:h-full lg:w-[1200px] lg:flex-row"
+        className="flex flex-col lg:h-full lg:w-[1300px] lg:flex-row"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -15,7 +15,7 @@ export default function IntroComponent9() {
         }}
       >
         {/* left */}
-        <div className="flex items-center justify-center lg:h-full lg:w-1/2 lg:justify-start">
+        <div className="flex items-center justify-start lg:h-full lg:w-1/2">
           <div className=" flex flex-col items-center pb-4 lg:items-start lg:pb-20">
             <div className="w-[9rem] rounded-lg bg-grey20 p-1 text-center text-sm lg:w-[11.2rem] lg:p-[0.6rem] lg:text-base">
               4. 체계적인 매칭 시스템

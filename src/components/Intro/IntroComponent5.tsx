@@ -78,10 +78,17 @@ export default function IntroComponent5() {
 
       <div className="flex w-[min(100%,1920px)] flex-col gap-4 pt-28 lg:gap-7">
         {/* 첫번째 줄 */}
+<<<<<<< HEAD
         <div className="relative flex max-h-[110px] w-full overflow-hidden">
           <ul className="flex animate-infiniteScroll items-center">
             {doubledLogos.map((logo, index) => (
               <li key={index} className="mx-3 flex min-w-[130px] items-center justify-center md:min-w-[210px]">
+=======
+        <div className="flex max-h-[110px] w-full  overflow-hidden [mask-image:linear-gradient(to_right,transparent_0%,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+          <ul className="my-2 flex w-full animate-infiniteScroll items-center justify-center md:justify-start [&>img]:max-w-none [&>li]:mx-3">
+            {logos.map((logo, index) => (
+              <li key={index} className="flex min-w-[130px] items-center justify-center md:min-w-[210px]">
+>>>>>>> 8144e1e (fix: 5차 QA 수정)
                 <Image
                   src={logo}
                   alt={`Partner2-${index}`}
@@ -96,10 +103,17 @@ export default function IntroComponent5() {
         </div>
 
         {/* 두번째 줄 */}
+<<<<<<< HEAD
         <div className="relative flex max-h-[110px] w-full overflow-hidden pt-8">
           <ul className="animate-infiniteScrollReverse flex items-center">
             {doubledLogos2.map((logo, index) => (
               <li key={index} className="mx-3 flex min-w-[130px] items-center justify-center md:min-w-[210px]">
+=======
+        <div className="inline-flex max-h-[110px] w-full flex-nowrap overflow-hidden  [mask-image:linear-gradient(to_right,transparent_0%,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+          <ul className="my-2 flex w-full animate-infiniteScrollLeft items-center justify-center md:justify-start [&>img]:max-w-none [&>li]:mx-3">
+            {logos2.map((logo, index) => (
+              <li key={index} className=" flex min-w-[130px] items-center justify-center md:min-w-[210px]">
+>>>>>>> 8144e1e (fix: 5차 QA 수정)
                 <Image
                   src={logo}
                   alt={`Partner2-${index}`}

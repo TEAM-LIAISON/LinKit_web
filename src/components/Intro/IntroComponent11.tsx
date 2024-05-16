@@ -26,7 +26,7 @@ export default function IntroComponent11() {
   return (
     <div
       id="FAQ"
-      className="bg-white relative flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center lg:pt-20"
+      className="relative flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-white bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center lg:pt-20"
     >
       <div className="flex w-full flex-col items-center">
         <span className="text-center text-[1.6rem] font-bold leading-[3.625rem] lg:text-[2.62rem]">FAQ</span>
@@ -46,7 +46,7 @@ export default function IntroComponent11() {
         ].map((question, index) => (
           <div key={index} className="mt-2 overflow-hidden rounded-xl shadow-faq-shadow">
             <motion.h2
-              className="bg-white flex cursor-pointer items-center justify-between p-5 text-sm font-bold lg:h-[4.18rem] lg:w-[46.9rem] lg:text-xl"
+              className="flex cursor-pointer items-center justify-between bg-white p-5 text-sm font-bold lg:h-[4.18rem] lg:w-[46.9rem] lg:text-xl"
               onClick={() => toggleAccordion(index)}
               initial={false}
             >

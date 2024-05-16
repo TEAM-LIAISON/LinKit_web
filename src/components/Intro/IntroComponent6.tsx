@@ -3,7 +3,11 @@ import { motion } from 'framer-motion'
 
 export default function IntroComponent6() {
   return (
+<<<<<<< HEAD
     <div className="flex h-screen min-h-screen w-full snap-mandatory  snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-white bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center lg:pt-16">
+=======
+    <div className="bg-white flex h-screen min-h-screen w-full  snap-mandatory snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center lg:pt-16">
+>>>>>>> 8144e1e (fix: 5차 QA 수정)
       <motion.div
         className="flex flex-col lg:w-[1200px]"
         initial={{ opacity: 0, y: 30 }}
@@ -21,10 +25,17 @@ export default function IntroComponent6() {
 
         <div className="flex h-full w-full flex-col lg:flex-row">
           {/* left */}
+<<<<<<< HEAD
           <div className="flex h-full w-full items-center justify-center lg:w-1/2 lg:justify-start">
             <div className="flex flex-col items-center lg:items-start lg:pb-20">
               <div className="w-[9rem] rounded-lg bg-grey20 p-1 text-sm lg:w-[10.75rem] lg:p-[0.6rem] lg:text-base">
                 1. 팀원 구인 경로 최소화
+=======
+          <div className="flex h-full items-center justify-center lg:w-1/2">
+            <div className="flex flex-col items-center lg:items-start lg:pb-20">
+              <div className="w-[9rem] rounded-lg bg-grey20 p-1 text-sm lg:w-[10.75rem] lg:p-[0.6rem] lg:text-base">
+                1 팀원 구인 경로 최소화
+>>>>>>> 8144e1e (fix: 5차 QA 수정)
               </div>
               <span className="pt-3 text-center text-[1.6rem] font-bold lg:text-left lg:text-[2.62rem] lg:leading-[3.625rem]">
                 나와 맞는 사람을 <br />

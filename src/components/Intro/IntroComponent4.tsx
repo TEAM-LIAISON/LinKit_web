@@ -37,7 +37,11 @@ export default function IntroComponent4() {
         backgroundImage:
           'linear-gradient(180deg, #F1F3F7 19.19%, rgba(252, 252, 253, 0) 112.86%), url("/assets/intro/section4bg.png")',
       }}
+<<<<<<< HEAD
       className="flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-white bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center"
+=======
+      className="bg-white flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center"
+>>>>>>> 8144e1e (fix: 5차 QA 수정)
     >
       <motion.div
         className="flex w-full flex-col items-center"
@@ -49,7 +53,11 @@ export default function IntroComponent4() {
           ease: 'easeOut',
         }}
       >
+<<<<<<< HEAD
         <span className="w-auto rounded-lg bg-grey30 px-5 py-2 text-center text-sm font-medium text-grey70 lg:w-auto lg:py-[0.44rem] lg:text-[1.25rem]">
+=======
+        <span className="w-auto rounded-lg bg-grey30 py-1 text-center text-sm font-medium text-grey70 lg:w-auto lg:py-[0.44rem] lg:text-[1.25rem]">
+>>>>>>> 8144e1e (fix: 5차 QA 수정)
           {countdown}
         </span>
         <span className="pt-3 text-[1.6rem] font-bold lg:text-[2.62rem]">현재 사전 신청 진행중 이에요</span>
@@ -77,13 +85,21 @@ export default function IntroComponent4() {
           </div>
 
           <div className="flex w-full flex-col gap-2 pt-6 lg:flex-row">
+<<<<<<< HEAD
             <Link href={'https://bit.ly/3V5qBgT'}>
+=======
+            <Link href={'https://linkit.oopy.io/'}>
+>>>>>>> 8144e1e (fix: 5차 QA 수정)
               <div className="flex w-full items-center justify-center rounded-md bg-grey20 bg-opacity-80 py-3 text-sm font-normal lg:h-[5.125rem] lg:w-[23rem] lg:text-lg">
                 1. 참여하고 싶은 프로젝트 찾아보기
               </div>
             </Link>
 
+<<<<<<< HEAD
             <Link href={'https://bit.ly/4bitsK0'}>
+=======
+            <Link href={'https://tally.so/r/w7dOW6'}>
+>>>>>>> 8144e1e (fix: 5차 QA 수정)
               <div className="flex w-full items-center justify-center rounded-md bg-grey20 bg-opacity-80 py-3 text-sm font-normal lg:h-[5.125rem] lg:w-[23rem] lg:text-lg">
                 2. 1분만에 사전신청 하기
               </div>
