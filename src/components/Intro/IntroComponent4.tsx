@@ -54,10 +54,14 @@ export default function IntroComponent4() {
         }}
       >
 <<<<<<< HEAD
+<<<<<<< HEAD
         <span className="w-auto rounded-lg bg-grey30 px-5 py-2 text-center text-sm font-medium text-grey70 lg:w-auto lg:py-[0.44rem] lg:text-[1.25rem]">
 =======
         <span className="w-auto rounded-lg bg-grey30 py-1 text-center text-sm font-medium text-grey70 lg:w-auto lg:py-[0.44rem] lg:text-[1.25rem]">
 >>>>>>> 8144e1e (fix: 5차 QA 수정)
+=======
+        <span className="w-auto rounded-lg bg-grey30 px-5 py-2 text-center text-sm font-medium text-grey70 lg:w-auto lg:py-[0.44rem] lg:text-[1.25rem]">
+>>>>>>> 8f79fee (fix: :lipstick: styleFIx)
           {countdown}
         </span>
         <span className="pt-3 text-[1.6rem] font-bold lg:text-[2.62rem]">현재 사전 신청 진행중 이에요</span>
