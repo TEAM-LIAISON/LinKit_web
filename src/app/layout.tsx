@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import localFont from 'next/font/local'
 import Header from '@/components/Layout/Header'
 import Footer from '@/components/Layout/Footer'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 import './globals.css'
 
@@ -32,6 +33,7 @@ export default function RootyLayout({
         {children}
         <Footer />
       </body>
+      <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
     </html>
   )
 }
