@@ -5,7 +5,7 @@ import Footer from '@/components/Layout/Footer'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
 import './globals.css'
-import Script from 'next/script'
+import Scripts from '@/components/script'
 
 export const metadata: Metadata = {
   title: 'Linkit',
@@ -35,7 +35,7 @@ export default function RootyLayout({
         <Footer />
       </body>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
-      <Script />
+      <Scripts />
     </html>
   )
 }
