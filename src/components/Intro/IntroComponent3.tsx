@@ -63,6 +63,7 @@ export default function IntroComponent3() {
             <span className="text-center text-sm text-grey100 lg:text-right lg:text-xl">올해 방학엔 스펙 뭐 쌓지?</span>
             <span className="text-center text-[1.6rem] font-bold text-grey100 lg:pb-4 lg:text-[2.62rem]">
               목표를 향해 함께 모여보세요
+<<<<<<< HEAD
 =======
           <div className="mb-16 flex flex-col md:mb-0 ">
 =======
@@ -75,6 +76,8 @@ export default function IntroComponent3() {
             <span className="text-center text-[1.6rem] font-bold text-grey100 lg:pb-4 lg:text-[2.62rem]">
               목표를 향해 함께 모여요
 >>>>>>> 8144e1e (fix: 5차 QA 수정)
+=======
+>>>>>>> 8d90821 (fix: FixBug)
             </span>
 
             <span className="test-sm pt-5 text-center font-medium text-grey70 lg:text-right lg:text-[1.25rem]">
