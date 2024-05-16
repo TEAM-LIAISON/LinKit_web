@@ -5,7 +5,6 @@ import localFont from 'next/font/local'
 import Header from '@/components/Layout/Header'
 import Footer from '@/components/Layout/Footer'
 import { GoogleAnalytics } from '@next/third-parties/google'
-import Hotjar from '@hotjar/browser'
 
 import './globals.css'
 import Scripts from '@/components/script'
@@ -33,8 +32,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  Hotjar.init(4983615, 6)
-
   return (
     <html lang="ko" className={`${pretendard.variable}`}>
       <body className={`${pretendard.className} bg-[#fff]`}>
@@ -49,6 +46,7 @@ export default function RootLayout({
         <Scripts />
       </body>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
+      <Script />
     </html>
   )
 }
