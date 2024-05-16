@@ -27,10 +27,7 @@ export default function RootyLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const siteId = Number(process.env.NEXT_PUBLIC_HJID)
-  const hotjarVersion = Number(process.env.NEXT_PUBLIC_HJSV)
-
-  Hotjar.init(siteId, hotjarVersion)
+  Hotjar.init(4983615, 6)
 
   return (
     <html lang="ko" className={`${pretendard.variable}`}>
