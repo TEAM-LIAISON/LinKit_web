@@ -11,6 +11,7 @@
   "dependencies": {
     "@channel.io/channel-web-sdk-loader": "^1.1.7",
     "@hookform/resolvers": "^3.3.4",
+    "@hotjar/browser": "^1.0.9",
     "@next/third-parties": "14.0.5-canary.38",
     "axios": "^1.6.8",
     "framer-motion": "^11.1.7",

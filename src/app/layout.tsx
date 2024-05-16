@@ -3,6 +3,7 @@ import localFont from 'next/font/local'
 import Header from '@/components/Layout/Header'
 import Footer from '@/components/Layout/Footer'
 import { GoogleAnalytics } from '@next/third-parties/google'
+import Hotjar from '@hotjar/browser'
 
 import './globals.css'
 
@@ -26,6 +27,11 @@ export default function RootyLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const siteId = Number(process.env.NEXT_PUBLIC_HJID)
+  const hotjarVersion = Number(process.env.NEXT_PUBLIC_HJSV)
+
+  Hotjar.init(siteId, hotjarVersion)
+
   return (
     <html lang="ko" className={`${pretendard.variable}`}>
       <body className={`${pretendard.className}`}>
