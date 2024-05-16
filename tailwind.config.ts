@@ -66,17 +66,17 @@ const config: Config = {
       // animation library
       keyframes: {
         infiniteScroll: {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-50%)' },
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
         },
-        infiniteScrollLeft: {
-          from: { transform: 'translateX(-50%)' },
-          to: { transform: 'translateX(0%)' },
+        infiniteScrollReverse: {
+          '0%': { transform: 'translateX(-50%)' },
+          '100%': { transform: 'translateX(0%)' },
         },
       },
       animation: {
-        infiniteScroll: 'infiniteScroll 50s linear infinite',
-        infiniteScrollLeft: 'infiniteScrollLeft 50s linear infinite',
+        infiniteScroll: 'infiniteScroll 40s linear infinite',
+        infiniteScrollReverse: 'infiniteScrollReverse 40s linear infinite',
       },
     },
   },

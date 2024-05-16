@@ -78,10 +78,10 @@ export default function IntroComponent5() {
 
       <div className="flex w-[min(100%,1920px)] flex-col gap-4 pt-28 lg:gap-7">
         {/* 첫번째 줄 */}
-        <div className="flex max-h-[110px] w-full  overflow-hidden [mask-image:linear-gradient(to_right,transparent_0%,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-          <ul className="my-2 flex w-full animate-infiniteScroll items-center justify-center md:justify-start [&>img]:max-w-none [&>li]:mx-3">
-            {logos.map((logo, index) => (
-              <li key={index} className="flex min-w-[130px] items-center justify-center md:min-w-[210px]">
+        <div className="relative flex max-h-[110px] w-full overflow-hidden">
+          <ul className="flex animate-infiniteScroll items-center">
+            {doubledLogos.map((logo, index) => (
+              <li key={index} className="mx-3 flex min-w-[130px] items-center justify-center md:min-w-[210px]">
                 <Image
                   src={logo}
                   alt={`Partner2-${index}`}
@@ -93,20 +93,13 @@ export default function IntroComponent5() {
               </li>
             ))}
           </ul>
-          {/* <ul className="w-full flex items-center justify-center md:justify-start [&>li]:mx-8 [&>img]:max-w-none animate-infiniteScroll">
-          {doubledLogos.map((logo, index) => (
-            <li key={index} className="min-w-[150px]">
-              <Image src={logo} alt={`Partner2-${index}`} width={175} height={70} />
-            </li>
-          ))}
-        </ul> */}
         </div>
 
         {/* 두번째 줄 */}
-        <div className="inline-flex max-h-[110px] w-full flex-nowrap overflow-hidden  [mask-image:linear-gradient(to_right,transparent_0%,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-          <ul className="my-2 flex w-full animate-infiniteScrollLeft items-center justify-center md:justify-start [&>img]:max-w-none [&>li]:mx-3">
-            {logos2.map((logo, index) => (
-              <li key={index} className=" flex min-w-[130px] items-center justify-center md:min-w-[210px]">
+        <div className="relative flex max-h-[110px] w-full overflow-hidden pt-8">
+          <ul className="animate-infiniteScrollReverse flex items-center">
+            {doubledLogos2.map((logo, index) => (
+              <li key={index} className="mx-3 flex min-w-[130px] items-center justify-center md:min-w-[210px]">
                 <Image
                   src={logo}
                   alt={`Partner2-${index}`}
@@ -118,13 +111,6 @@ export default function IntroComponent5() {
               </li>
             ))}
           </ul>
-          {/* <ul className="w-full flex items-center justify-center md:justify-start [&>li]:mx-8 [&>img]:max-w-none animate-infiniteScrollLeft">
-          {doubledLogos2.map((logo, index) => (
-            <li key={index} className="min-w-[170px]">
-              <Image src={logo} alt={`Partner2-${index}`} width={145} height={38} />
-            </li>
-          ))}
-        </ul> */}
         </div>
       </div>
     </motion.div>

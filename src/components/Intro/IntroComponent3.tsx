@@ -33,7 +33,7 @@ export default function IntroComponent3() {
           <div className="mb-7 mt-40 flex flex-col lg:mb-16">
             <span className="text-center text-sm text-grey100 lg:text-right lg:text-xl">올해 방학엔 스펙 뭐 쌓지?</span>
             <span className="text-center text-[1.6rem] font-bold text-grey100 lg:pb-4 lg:text-[2.62rem]">
-              목표를 향해 함께 모여요
+              목표를 향해 함께 모여보세요
             </span>
 
             <span className="test-sm pt-5 text-center font-medium text-grey70 lg:text-right lg:text-[1.25rem]">
