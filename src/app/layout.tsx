@@ -46,7 +46,7 @@ export default function RootLayout({
         <Scripts />
       </body>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
-      <Script />
+      <Scripts />
     </html>
   )
 }
