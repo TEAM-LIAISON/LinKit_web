@@ -37,10 +37,10 @@ export default function IntroComponent4() {
         backgroundImage:
           'linear-gradient(180deg, #F1F3F7 19.19%, rgba(252, 252, 253, 0) 112.86%), url("/assets/intro/section4bg.png")',
       }}
-      className="w-full snap-start snap-mandatory snap-always overflow-x-auto h-screen flex flex-col items-center justify-center min-h-screen bg-no-repeat bg-cover bg-white bg-opacity-50 overflow-hidden py-20"
+      className="bg-white flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center"
     >
       <motion.div
-        className="w-full flex flex-col items-center"
+        className="flex w-full flex-col items-center"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -49,19 +49,19 @@ export default function IntroComponent4() {
           ease: 'easeOut',
         }}
       >
-        <span className="w-[11rem] lg:w-[17.3rem] text-sm lg:text-[1.25rem] text-grey70 font-medium bg-grey30 text-center py-1 lg:py-[0.44rem] rounded-lg">
+        <span className="w-auto rounded-lg bg-grey30 py-1 text-center text-sm font-medium text-grey70 lg:w-auto lg:py-[0.44rem] lg:text-[1.25rem]">
           {countdown}
         </span>
-        <span className="text-[1.6rem] lg:text-[2.62rem] font-bold pt-3">현재 사전 신청 진행중 이에요</span>
-        <span className="text-sm lg:text-xl text-grey70 font-medium pt-2">
+        <span className="pt-3 text-[1.6rem] font-bold lg:text-[2.62rem]">현재 사전 신청 진행중 이에요</span>
+        <span className="pt-2 text-sm font-medium text-grey70 lg:text-xl">
           사전 신청 등록하고 정규 프로필까지 <br className="lg:hidden" />
           등록 완료하면 스타벅스 커피 쿠폰 지급
         </span>
-        <span className="text-sm text-grey50 font-medium pt-2">*추첨 된 30명에게 지급될 예정입니다</span>
+        <span className="pt-2 text-sm font-medium text-grey50">*추첨 된 30명에게 지급될 예정입니다</span>
       </motion.div>
 
       <motion.div
-        className="w-full flex flex-col lg:flex-row items-center justify-center gap-6 mt-4 lg:mt-24"
+        className="mt-4 flex w-full flex-col items-center justify-center gap-6 lg:mt-12 lg:flex-row"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -70,30 +70,28 @@ export default function IntroComponent4() {
           ease: 'easeOut',
         }}
       >
-        <div className="w-[90%] lg:w-[72.8rem] h-auto lg:h-[16rem] bg-[#fff] p-5 flex flex-col items-center rounded-xl">
+        <div className="flex h-auto w-[90%] flex-col items-center rounded-xl bg-[#fff] p-5 max-lg:mt-10 lg:w-[72.8rem]">
           <div className="flex flex-col items-center">
             <h2 className="text-2xl font-bold lg:pt-3">사전 프로필 등록</h2>
-            <span className="text-sm text-grey70 pt-1">05월 15일부터 06월 23일까지</span>
+            <span className="pt-1 text-sm text-grey70">05월 15일부터 06월 23일까지</span>
           </div>
 
-          <div className="w-full flex flex-col lg:flex-row gap-2 pt-6">
+          <div className="flex w-full flex-col gap-2 pt-6 lg:flex-row">
             <Link href={'https://linkit.oopy.io/'}>
-              <div className="w-full lg:w-[23rem] py-3 lg:h-[5.125rem] bg-grey20 bg-opacity-80 flex justify-center items-center text-sm lg:text-lg font-normal rounded-md">
+              <div className="flex w-full items-center justify-center rounded-md bg-grey20 bg-opacity-80 py-3 text-sm font-normal lg:h-[5.125rem] lg:w-[23rem] lg:text-lg">
                 1. 참여하고 싶은 프로젝트 찾아보기
               </div>
             </Link>
 
             <Link href={'https://tally.so/r/w7dOW6'}>
-              <div className="w-full lg:w-[23rem] py-3 lg:h-[5.125rem] bg-grey20 bg-opacity-80 flex justify-center items-center text-sm lg:text-lg font-normal rounded-md">
+              <div className="flex w-full items-center justify-center rounded-md bg-grey20 bg-opacity-80 py-3 text-sm font-normal lg:h-[5.125rem] lg:w-[23rem] lg:text-lg">
                 2. 1분만에 사전신청 하기
               </div>
             </Link>
-            <div className="w-full lg:w-[23rem] py-3 lg:h-[5.125rem] bg-[#2563EB] text-[#fff] flex justify-center items-center text-sm lg:text-lg font-normal rounded-md">
+            <div className="flex w-full items-center justify-center rounded-md bg-[#2563EB] py-3 text-sm font-normal text-[#fff] lg:h-[5.125rem] lg:w-[23rem] lg:text-lg">
               ☕️ 사전신청 시 스타벅스 커피 쿠폰 지급
             </div>
           </div>
-
-          <span className="text-sm text-grey50 font-medium pt-4">*추첨 된 30명에게 지급될 예정입니다</span>
         </div>
       </motion.div>
     </div>

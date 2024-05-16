@@ -3,9 +3,9 @@ import { motion } from 'framer-motion'
 
 export default function IntroComponent9() {
   return (
-    <div className="w-full snap-start snap-mandatory snap-always overflow-x-auto h-screen flex flex-col items-center pt-20 min-h-screen bg-no-repeat bg-cover bg-white bg-opacity-50 overflow-hidden">
+    <div className="bg-white flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center">
       <motion.div
-        className="lg:w-[1300px] lg:h-full flex lg:flex-row flex-col"
+        className="flex flex-col lg:h-full lg:w-[1300px] lg:flex-row"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -15,55 +15,55 @@ export default function IntroComponent9() {
         }}
       >
         {/* left */}
-        <div className="lg:w-1/2 lg:h-full flex items-center justify-start">
-          <div className=" flex flex-col lg:items-start items-center pb-4 lg:pb-20">
-            <div className="text-sm lg:text-base text-center p-1 lg:p-[0.6rem] w-[9rem] lg:w-[11.2rem] bg-grey20 rounded-lg">
-              4. 체계적인 매칭 시스템
+        <div className="flex items-center justify-start lg:h-full lg:w-1/2">
+          <div className=" flex flex-col items-center pb-4 lg:items-start lg:pb-20">
+            <div className="w-[9rem] rounded-lg bg-grey20 p-1 text-center text-sm lg:w-[11.2rem] lg:p-[0.6rem] lg:text-base">
+              4 체계적인 매칭 시스템
             </div>
-            <span className="text-[1.6rem] lg:text-[2.62rem] font-bold pt-3 lg:leading-[3.625rem] text-center lg:text-left">
+            <span className="pt-2 text-center text-[1.6rem] font-bold lg:text-left lg:text-[2.62rem] lg:leading-[3.625rem]">
               함께 팀을 이루고 싶은 사람에게
               <br />
               매칭 요청을 보내요
               <br />
             </span>
-            <span className="text-xs lg:text-xl text-grey70 font-medium pt-2 lg:pt-5 text-center leading-5">
-              매칭 요청을 보낼 시 <br className="lg:hidden flex" />
+            <span className="pt-2 text-center text-xs font-medium leading-4 text-grey70 lg:pt-5 lg:text-xl">
+              매칭 요청을 보낼 시 <br className="flex lg:hidden" />
               본인을 어필하는 메시지를 함께 전달할 수 있어요
             </span>
           </div>
         </div>
         {/* right */}
-        <div className="lg:w-1/2 lg:h-full flex gap-3 pt-2 items-center justify-end">
-          <div className="w-[20.1rem] lg:w-[32.6rem] h-[18.5rem] lg:h-[29.5rem] shadow-card-shadow rounded-2xl flex flex-col px-4 py-4 lg:py-7 lg:px-12 items-center">
+        <div className="flex items-center justify-end gap-3 pt-2 lg:h-full lg:w-1/2">
+          <div className="flex h-[18.5rem] w-[20.1rem] flex-col items-center rounded-2xl px-4 py-4 shadow-card-shadow lg:h-[29.5rem] lg:w-[32.6rem] lg:px-12 lg:py-7">
             <span className="text-xs lg:text-[1.1rem]">한가영님에게 매칭 요청하기</span>
-            <div className="flex w-full gap-5 justify-center items-center lg:pt-5">
+            <div className="flex w-full items-center justify-center gap-5 lg:pt-5">
               <Image
                 src={'/assets/intro/profile3.png'}
                 width={110}
                 height={110}
                 alt="profile"
-                className="w-[4.4rem] h-[4.4rem] lg:w-[6.875rem] lg:h-[6.875rem]"
+                className="h-[4.4rem] w-[4.4rem] lg:h-[6.875rem] lg:w-[6.875rem]"
               />
               <Image src={'/assets/icons/connect.svg'} width={69} height={11} alt="profile" className="" />
-              <div className="w-[5.4rem] h-[5.4rem] lg:w-[7.8rem] lg:h-[7.8rem] rounded-full border-2 border-[#2563EB] flex justify-center items-center">
+              <div className="flex h-[5.4rem] w-[5.4rem] items-center justify-center rounded-full border-2 border-[#2563EB] lg:h-[7.8rem] lg:w-[7.8rem]">
                 <Image
                   src={'/assets/intro/profile5.png'}
                   width={110}
                   height={110}
                   alt="profile"
-                  className="w-[4.4rem] h-[4.4rem] lg:w-[6.875rem] lg:h-[6.875rem]"
+                  className="h-[4.4rem] w-[4.4rem] lg:h-[6.875rem] lg:w-[6.875rem]"
                 />
               </div>
             </div>
-            <span className="w-full text-xs lg:text-[0.93rem] text-grey50 pt-3 lg:pt-6 pl-2">
+            <span className="w-full pl-2 pt-3 text-xs text-grey50 lg:pt-6 lg:text-[0.93rem]">
               한가영님에게 매칭 요청을 보내기 위한 메시지를 적어주세요.
             </span>
-            <div className="w-full h-[7.9rem] p-[0.81rem] bg-grey10 rounded-lg mt-1 text-[0.6rem] lg:text-[0.81rem]">
+            <div className="mt-1 h-[7.9rem] w-full rounded-lg bg-grey10 p-[0.81rem] text-[0.6rem] lg:text-[0.81rem]">
               안녕하세요, 프론트엔드 개발자 모집한다는 글 보고 연락드립니다. 저는 현재 대학생이지만, 2년 정도
               스타트업에서 일을 해 본 경력이 있으며, IoT 솔루션에 관심이 많습니다.
             </div>
 
-            <div className="text-xs lg:text-sm w-full h-[3.3rem] bg-grey90 rounded-lg mt-3 flex items-center justify-center text-[#fff] font-bold ">
+            <div className="mt-3 flex h-[3.3rem] w-full items-center justify-center rounded-lg bg-grey90 text-xs font-bold text-[#fff] lg:text-sm ">
               매칭 요청 보내기
             </div>
           </div>

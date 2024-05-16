@@ -54,7 +54,7 @@ export default function IntroComponent5() {
 
   return (
     <motion.div
-      className="w-full snap-start snap-mandatory snap-always overflow-x-auto h-screen flex flex-col items-center justify-center min-h-screen bg-no-repeat bg-cover bg-white bg-opacity-50 overflow-hidden"
+      className="bg-white flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{
@@ -63,32 +63,32 @@ export default function IntroComponent5() {
         ease: 'easeOut',
       }}
     >
-      <div className="w-full flex flex-col items-center">
-        <span className="text-[1.6rem] lg:text-[2.62rem] font-bold pt-3 lg:leading-[3.625rem]">
+      <div className="flex w-full flex-col items-center">
+        <span className="pt-3 text-[1.6rem] font-bold lg:text-[2.62rem] lg:leading-[3.625rem]">
           프로필만 등록하면
           <br />
           올해 여름을 알차게
         </span>
-        <span className="text-sm lg:text-xl text-grey70 font-medium pt-5 text-center lg:leading-8">
+        <span className="pt-5 text-center text-sm font-medium text-grey70 lg:text-xl lg:leading-8">
           성공을 위해 제대로 일해보고 싶은 사람들과 함께해요
           <br />
           전국 대학(원)생 및 창업팀에게 열려있습니다.
         </span>
       </div>
 
-      <div className="flex flex-col pt-28 gap-4 lg:gap-7 w-[min(100%,1920px)]">
+      <div className="flex w-[min(100%,1920px)] flex-col gap-4 pt-28 lg:gap-7">
         {/* 첫번째 줄 */}
-        <div className="w-full max-h-[110px] flex  overflow-hidden [mask-image:linear-gradient(to_right,transparent_0%,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-          <ul className="my-2 w-full flex items-center justify-center md:justify-start [&>li]:mx-3 [&>img]:max-w-none animate-infiniteScroll">
+        <div className="flex max-h-[110px] w-full  overflow-hidden [mask-image:linear-gradient(to_right,transparent_0%,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+          <ul className="my-2 flex w-full animate-infiniteScroll items-center justify-center md:justify-start [&>img]:max-w-none [&>li]:mx-3">
             {logos.map((logo, index) => (
-              <li key={index} className="min-w-[130px] md:min-w-[210px] flex items-center justify-center">
+              <li key={index} className="flex min-w-[130px] items-center justify-center md:min-w-[210px]">
                 <Image
                   src={logo}
                   alt={`Partner2-${index}`}
                   width={180}
                   height={70}
                   objectFit="cover"
-                  className="shadow-logo-shadow rounded-[40px] "
+                  className="rounded-[40px] shadow-logo-shadow "
                 />
               </li>
             ))}
@@ -103,17 +103,17 @@ export default function IntroComponent5() {
         </div>
 
         {/* 두번째 줄 */}
-        <div className="w-full max-h-[110px] inline-flex flex-nowrap overflow-hidden  [mask-image:linear-gradient(to_right,transparent_0%,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-          <ul className="w-full my-2 flex items-center justify-center md:justify-start [&>li]:mx-3 [&>img]:max-w-none animate-infiniteScrollLeft">
+        <div className="inline-flex max-h-[110px] w-full flex-nowrap overflow-hidden  [mask-image:linear-gradient(to_right,transparent_0%,_black_128px,_black_calc(100%-200px),transparent_100%)]">
+          <ul className="my-2 flex w-full animate-infiniteScrollLeft items-center justify-center md:justify-start [&>img]:max-w-none [&>li]:mx-3">
             {logos2.map((logo, index) => (
-              <li key={index} className=" flex items-center justify-center min-w-[130px] md:min-w-[210px]">
+              <li key={index} className=" flex min-w-[130px] items-center justify-center md:min-w-[210px]">
                 <Image
                   src={logo}
                   alt={`Partner2-${index}`}
                   width={180}
                   height={70}
                   objectFit="cover"
-                  className="shadow-logo-shadow rounded-[40px]"
+                  className="rounded-[40px] shadow-logo-shadow"
                 />
               </li>
             ))}

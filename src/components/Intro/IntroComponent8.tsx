@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export default function IntroComponent8() {
   return (
     <motion.div
-      className="w-full snap-start snap-mandatory snap-always overflow-x-auto h-screen flex flex-col justify-center items-center pt-20 min-h-screen bg-no-repeat bg-cover bg-white bg-opacity-50 overflow-hidden"
+      className="bg-white flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{
@@ -13,27 +13,27 @@ export default function IntroComponent8() {
         ease: 'easeOut',
       }}
     >
-      <div className="w-full h-full flex flex-col lg:flex-row">
+      <div className="flex h-full w-full flex-col lg:flex-row">
         {/* left */}
-        <div className="lg:w-1/2 lg:h-full flex items-center justify-center">
+        <div className="flex items-center justify-center lg:h-full lg:w-1/2">
           <div className="flex flex-col items-center lg:items-start lg:pb-20">
-            <div className="text-sm lg:text-base text-center p-1 lg:p-[0.6rem] w-[9rem] lg:w-[9.75rem] bg-grey20 rounded-lg">
+            <div className="w-[9rem] rounded-lg bg-grey20 p-1 text-center text-sm lg:w-[9.75rem] lg:p-[0.6rem] lg:text-base">
               3 편리한 정보 확인
             </div>
-            <span className="text-[1.6rem] lg:text-[2.62rem] font-bold pt-3 lg:leading-[3.625rem] text-center lg:text-left">
+            <span className="pt-3 text-center text-[1.6rem] font-bold lg:text-left lg:text-[2.62rem] lg:leading-[3.625rem]">
               다른 사용자의 프로필을
               <br />
               자유롭게 열람해요
               <br />
             </span>
-            <span className="text-xs lg:text-xl text-grey70 font-medium pt-5 text-center leading-6">
+            <span className="pt-2 text-center text-xs font-medium leading-4 text-grey70 lg:text-xl">
               프로필을 열람하고 마음에 드는 <br className="flex sm:hidden" />
               사용자에게 매칭 요청을 보내보세요
             </span>
           </div>
         </div>
         {/* right */}
-        <div className="lg:w-1/2 h-full flex gap-3 pt-2 items-center relative">
+        <div className="relative flex h-full items-center gap-3 pt-2 lg:w-1/2">
           <Image src={'/assets/intro/section8bg.png'} layout="fill" objectFit="contain" alt="background" />
         </div>
       </div>
