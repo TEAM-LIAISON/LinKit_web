@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import './Example.css' // CSS 스타일은 이전에 설명한 내용을 조금 수정하며 파일에 포함되어 있어야 합니다.
 import Image from 'next/image'
-import { BsList } from 'react-icons/bs'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 
@@ -32,8 +31,8 @@ export default function Header() {
   }
 
   return (
-    <nav className="w-full bg-white-alpha-20 shadow-soft-shadow backdrop-blur-lg flex-shrink fixed top-0 z-[100]">
-      <nav className="mx-auto flex max-w-full items-center justify-between p-4 lg:p-6 lg:pl-40 lg:pr-20">
+    <nav className="fixed top-0 z-[100] w-full flex-shrink bg-white-alpha-20 shadow-soft-shadow backdrop-blur-lg">
+      <nav className="mx-auto flex max-w-full items-center justify-between p-[16px] lg:p-6 lg:pl-40 lg:pr-20">
         <div className="flex lg:flex-1">
           <Link href="#" className="-m-1.5 p-1.5">
             <Image
@@ -41,11 +40,11 @@ export default function Header() {
               width={110}
               height={20}
               alt="logo"
-              className="w-[85px] h-[17px] lg:w-auto lg:h-auto"
+              className="h-[17px] w-[85px] lg:h-auto lg:w-auto"
             />
           </Link>
         </div>
-        <div className="flex lg:flex-1 lg:justify-end gap-10">
+        <div className="flex gap-10 lg:flex-1 lg:justify-end">
           {/* <a href="#" className="hidden lg:flex text-sm font-medium leading-5 text-grey100">
             링킷 소개
           </a> */}

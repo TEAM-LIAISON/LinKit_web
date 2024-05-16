@@ -9,7 +9,9 @@ export default function IntroComponent3() {
       // style={{ backgroundImage: 'url("/assets/intro/section3bg.png")' }}
       className="bg-white relative flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always items-center justify-center overflow-hidden overflow-x-auto bg-opacity-50 bg-cover bg-no-repeat"
     >
+      {/* PC 배경 */}
       <Image src={'/assets/intro/section3bg.png'} alt="line" fill objectFit="cover" className="z-0 hidden lg:flex" />
+      {/* 모바일 배경 */}
       <Image
         src={'/assets/intro/mobile/section3bg.png'}
         alt="line"
@@ -19,7 +21,7 @@ export default function IntroComponent3() {
       />
       <div className="z-50 flex flex-col lg:w-[1400px] lg:flex-row lg:justify-end">
         <motion.div
-          className="flex h-screen flex-col items-center justify-between py-20 lg:mr-40 lg:mt-16 lg:items-end lg:justify-center"
+          className="flex h-screen flex-col items-center justify-start py-20 lg:mr-40 lg:mt-16 lg:items-end lg:justify-center"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -28,7 +30,7 @@ export default function IntroComponent3() {
             ease: 'easeOut',
           }}
         >
-          <div className="mb-16 flex flex-col md:mb-0 ">
+          <div className="mb-7 flex flex-col md:mb-0 lg:mb-16">
             <span className="text-center text-sm text-grey100 lg:text-right lg:text-xl">올해 방학엔 스펙 뭐 쌓지?</span>
             <span className="text-center text-[1.6rem] font-bold text-grey100 lg:pb-4 lg:text-[2.62rem]">
               목표를 향해 함께 모여요
@@ -42,7 +44,7 @@ export default function IntroComponent3() {
           </div>
           <motion.div
             whileHover={{ scale: 1.1 }}
-            className="mt-12 flex h-[3rem] w-[15.5rem] cursor-pointer items-center justify-center gap-4 rounded-[3.75rem] bg-[#2F353C] text-[#fff] md:h-[4.43rem] md:w-[17.18rem]"
+            className="flex h-[3rem] w-[15.5rem] cursor-pointer items-center justify-center gap-4 rounded-[3.75rem] bg-[#2F353C] text-[#fff] md:h-[4.43rem] md:w-[17.18rem] lg:mt-12"
           >
             <Link href={'https://linkit.oopy.io/'}>
               <span className="ml-4 text-sm font-medium md:text-base">7월에 진행되는 프로젝트 찾기</span>

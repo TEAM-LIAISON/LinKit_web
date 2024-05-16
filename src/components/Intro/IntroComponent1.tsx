@@ -50,7 +50,7 @@ export default function IntroComponentTemp() {
   return (
     <>
       <div
-        className="w-full relative pt-5 md:pt-0 snap-start snap-mandatory snap-always overflow-x-auto h-screen flex flex-col items-center justify-center min-h-screen bg-no-repeat bg-cover bg-opacity-50 overflow-hidden"
+        className="relative flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center justify-center overflow-hidden overflow-x-auto bg-opacity-50 bg-cover bg-no-repeat pt-5 md:pt-0"
         // style={{ backgroundImage: `url("${positions[selectedRole].bgImage}")` }}
       >
         {/* PC 배경 */}
@@ -60,7 +60,7 @@ export default function IntroComponentTemp() {
           animate={{ y: '0%' }}
           exit={{ y: '-100%' }}
           transition={{ type: 'spring', stiffness: 260, damping: 30 }}
-          className="absolute inset-0 z-0 sm:flex hidden"
+          className="absolute inset-0 z-0 hidden sm:flex"
         >
           <Image src={positions[selectedRole].bgImage} alt="line" fill objectFit="cover" className="" />\
         </motion.div>
@@ -72,23 +72,23 @@ export default function IntroComponentTemp() {
           animate={{ y: '0%' }}
           exit={{ y: '-100%' }}
           transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-          className="absolute inset-0 z-0 sm:hidden flex"
+          className="absolute inset-0 z-0 flex sm:hidden"
         >
           <Image
             src={positions[selectedRole].mobilebg}
             alt="line"
             fill
             objectFit="cover"
-            className="z-0 sm:hidden flex"
+            className="z-0 flex sm:hidden"
           />
         </motion.div>
 
         <motion.div
           whileHover={{ scale: 1.02 }}
           transition={{ type: 'spring', stiffness: 260, damping: 20 }}
-          className="w-[82%] md:w-[31.6rem] h-[22.9rem] md:h-[21.9rem] z-50 shadow-frame-shaow rounded-[3.125rem] bg-[rgba(79, 81, 98, 0.07)] backdrop-blur-2xl"
+          className="bg-[rgba(79, 81, 98, 0.07)] z-50 h-[22.9rem] w-[82%] rounded-[3.125rem] shadow-frame-shaow backdrop-blur-2xl md:h-[21.9rem] md:w-[31.6rem]"
         >
-          <div className="py-[1.4rem] lg:py-[1.65rem] flex flex-col items-center z-50">
+          <div className="z-50 flex flex-col items-center py-[1.4rem] lg:py-[1.65rem]">
             <div className="flex gap-4 font-medium backdrop-blur-[37px]">
               <span className="">성공을</span>
               <Image src={'/assets/intro/lineLink.svg'} alt="line" width={50} height={0.1} />
@@ -96,7 +96,7 @@ export default function IntroComponentTemp() {
               <span className="">잇는 팀빌딩</span>
             </div>
 
-            <div className="flex flex-col md:flex-row items-center w-[22.4rem] justify-start md:gap-10 pt-10">
+            <div className="flex w-[22.4rem] flex-col items-center justify-start pt-10 md:flex-row md:gap-10">
               <motion.div
                 key={selectedRole + '-image'}
                 initial={{ opacity: 0 }}
@@ -110,12 +110,12 @@ export default function IntroComponentTemp() {
                   width={124}
                   height={124}
                   alt=""
-                  className="rounded-[1.875rem] w-[6.9rem] h-[6.9rem] md:w-auto md:h-auto"
+                  className="h-[6.9rem] w-[6.9rem] rounded-[1.875rem] md:h-auto md:w-auto"
                 />
               </motion.div>
 
-              <div className="flex flex-col text-left justify-center p-4 md:p-0">
-                <span className="text-sm font-medium text-center md:text-left">7월 팀빌딩을 위한</span>
+              <div className="flex flex-col justify-center p-4 text-left md:p-0">
+                <span className="text-center text-sm font-medium md:text-left">7월 팀빌딩을 위한</span>
                 <motion.span
                   key={selectedRole + '-text'}
                   initial={{ opacity: 0 }}
@@ -123,26 +123,26 @@ export default function IntroComponentTemp() {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.5 }}
                   layout // Maintains text position and size during transitions
-                  className="font-bold text-[24px] md:text-[1.8rem]"
+                  className="text-[24px] font-bold md:text-[1.8rem]"
                 >
                   {positions[selectedRole].text}
                 </motion.span>
               </div>
             </div>
-            <Link href={'https://nn4e1.channel.io/home'}>
-              <div className="flex items-center gap-4 md:mt-8 cursor-pointer justify-center w-[14.25rem] h-[63px] lg:h-[4.4rem] bg-[#2F353C] rounded-[3.75rem]">
-                <span className="text-sm lg:text-lg text-[#fff]">사전 신청하러 가기</span>
+            <Link href={'https://tally.so/r/w7dOW6'}>
+              <div className="flex h-[63px] w-[14.25rem] cursor-pointer items-center justify-center gap-4 rounded-[3.75rem] bg-[#2F353C] md:mt-8 lg:h-[4.4rem]">
+                <span className="text-sm text-[#fff] lg:text-lg">사전 신청하러 가기</span>
                 <Image src={'/assets/icons/right_arrow.svg'} width={17} height={1} alt="right_arrow" />
               </div>
             </Link>
           </div>
         </motion.div>
 
-        <div className="flex justify-between mt-5 shadow-gray-07 items-center px-7 z-50 w-[88%] md:w-[39.5rem] h-[3.68rem] bg-[rgba(79, 81, 98, 0.07)] rounded-[3.91rem] backdrop-blur-2xl">
+        <div className="bg-[rgba(79, 81, 98, 0.07)] z-50 mt-5 flex h-[3.68rem] w-[88%] items-center justify-between rounded-[3.91rem] px-7 shadow-gray-07 backdrop-blur-2xl md:w-[39.5rem]">
           {Object.keys(positions).map((role) => (
             <span
               key={role}
-              className={`cursor-pointer ${selectedRole === role ? 'text-sm lg:text-xl font-bold grey100' : 'text-xs lg:text-base font-medium text-grey70'}`}
+              className={`cursor-pointer ${selectedRole === role ? 'grey100 text-sm font-bold lg:text-xl' : 'text-xs font-medium text-grey70 lg:text-base'}`}
               onClick={() => setSelectedRole(role as PositionKey)}
             >
               {role}

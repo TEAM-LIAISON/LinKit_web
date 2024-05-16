@@ -1,5 +1,6 @@
 'use client'
 import { AnimatePresence, motion } from 'framer-motion'
+import Image from 'next/image'
 import { useState } from 'react'
 
 type OpenState = {
@@ -45,12 +46,18 @@ export default function IntroComponent11() {
         ].map((question, index) => (
           <div key={index} className="mt-2 overflow-hidden rounded-xl shadow-faq-shadow">
             <motion.h2
-              className="bg-white cursor-pointer p-5 text-sm font-bold lg:h-[4.18rem] lg:w-[46.9rem] lg:text-xl"
+              className="bg-white flex cursor-pointer items-center justify-between p-5 text-sm font-bold lg:h-[4.18rem] lg:w-[46.9rem] lg:text-xl"
               onClick={() => toggleAccordion(index)}
               initial={false}
             >
               {question}
-              <span className="float-right">{isOpen[index] ? '-' : '+'}</span>
+              <span className="float-right">
+                {isOpen[index] ? (
+                  <Image src="/assets/icons/up>.svg" alt="Minus Icon" width={8} height={4} />
+                ) : (
+                  <Image src="/assets/icons/bottom>.svg" alt="Plus Icon" width={8} height={4} />
+                )}
+              </span>
             </motion.h2>
             <AnimatePresence>
               {isOpen[index] && (
