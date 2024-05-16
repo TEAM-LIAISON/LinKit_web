@@ -3,9 +3,9 @@ import localFont from 'next/font/local'
 import Header from '@/components/Layout/Header'
 import Footer from '@/components/Layout/Footer'
 import { GoogleAnalytics } from '@next/third-parties/google'
-import Hotjar from '@hotjar/browser'
 
 import './globals.css'
+import Script from 'next/script'
 
 export const metadata: Metadata = {
   title: 'Linkit',
@@ -27,8 +27,6 @@ export default function RootyLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  Hotjar.init(4983615, 6)
-
   return (
     <html lang="ko" className={`${pretendard.variable}`}>
       <body className={`${pretendard.className}`}>
@@ -37,6 +35,7 @@ export default function RootyLayout({
         <Footer />
       </body>
       <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID || ''} />
+      <Script />
     </html>
   )
 }
