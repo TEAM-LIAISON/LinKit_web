@@ -91,7 +91,11 @@ export default function IntroComponentTemp() {
         <motion.div
           whileHover={{ scale: 1.02 }}
           transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+<<<<<<< HEAD
           className="bg-[rgba(79, 81, 98, 0.07)] z-10 h-[22.9rem] w-[82%] rounded-[3.125rem] shadow-frame-shaow backdrop-blur-2xl md:h-[21.9rem] md:w-[31.6rem]"
+=======
+          className="bg-[rgba(79, 81, 98, 0.07)] z-50 h-[22.9rem] w-[82%] rounded-[3.125rem] shadow-frame-shaow backdrop-blur-2xl md:h-[21.9rem] md:w-[31.6rem]"
+>>>>>>> b55760a (fix: QA6 apply)
         >
           <div className="z-50 flex flex-col items-center py-[1.4rem] lg:py-[1.65rem]">
             <div className="flex gap-4 font-medium backdrop-blur-[37px]">
@@ -134,7 +138,11 @@ export default function IntroComponentTemp() {
                 </motion.span>
               </div>
             </div>
+<<<<<<< HEAD
             <Link href={'https://bit.ly/4bitsK0'}>
+=======
+            <Link href={'https://tally.so/r/w7dOW6'}>
+>>>>>>> b55760a (fix: QA6 apply)
               <div className="flex h-[63px] w-[14.25rem] cursor-pointer items-center justify-center gap-4 rounded-[3.75rem] bg-[#2F353C] md:mt-8 lg:h-[4.4rem]">
                 <span className="text-sm text-[#fff] lg:text-lg">사전 신청하러 가기</span>
                 <Image src={'/assets/icons/right_arrow.svg'} width={17} height={1} alt="right_arrow" />
@@ -143,7 +151,11 @@ export default function IntroComponentTemp() {
           </div>
         </motion.div>
 
+<<<<<<< HEAD
         <div className="bg-[rgba(79, 81, 98, 0.07)] z-10 mt-5 flex h-[3.68rem] w-[88%] items-center justify-between rounded-[3.91rem] px-7 shadow-gray-07 backdrop-blur-2xl md:w-[39.5rem]">
+=======
+        <div className="bg-[rgba(79, 81, 98, 0.07)] z-50 mt-5 flex h-[3.68rem] w-[88%] items-center justify-between rounded-[3.91rem] px-7 shadow-gray-07 backdrop-blur-2xl md:w-[39.5rem]">
+>>>>>>> b55760a (fix: QA6 apply)
           {Object.keys(positions).map((role) => (
             <span
               key={role}

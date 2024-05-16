@@ -16,8 +16,13 @@ export default function IntroComponent3() {
 =======
       className="bg-white relative flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always items-center justify-center overflow-hidden overflow-x-auto bg-opacity-50 bg-cover bg-no-repeat"
     >
+      {/* PC 배경 */}
       <Image src={'/assets/intro/section3bg.png'} alt="line" fill objectFit="cover" className="z-0 hidden lg:flex" />
+<<<<<<< HEAD
 >>>>>>> 8144e1e (fix: 5차 QA 수정)
+=======
+      {/* 모바일 배경 */}
+>>>>>>> b55760a (fix: QA6 apply)
       <Image
         src={'/assets/intro/mobile/section3bg.png'}
         alt="line"
@@ -28,10 +33,14 @@ export default function IntroComponent3() {
       <div className="z-50 flex flex-col lg:w-[1400px] lg:flex-row lg:justify-end">
         <motion.div
 <<<<<<< HEAD
+<<<<<<< HEAD
           className="flex h-screen flex-col items-center justify-center py-20 lg:mr-40 lg:mt-16 lg:items-end lg:justify-center"
 =======
           className="flex h-screen flex-col items-center justify-between py-20 lg:mr-40 lg:mt-16 lg:items-end lg:justify-center"
 >>>>>>> 8144e1e (fix: 5차 QA 수정)
+=======
+          className="flex h-screen flex-col items-center justify-start py-20 lg:mr-40 lg:mt-16 lg:items-end lg:justify-center"
+>>>>>>> b55760a (fix: QA6 apply)
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -41,12 +50,16 @@ export default function IntroComponent3() {
           }}
         >
 <<<<<<< HEAD
+<<<<<<< HEAD
           <div className="mb-7 mt-40 flex flex-col lg:mb-16">
             <span className="text-center text-sm text-grey100 lg:text-right lg:text-xl">올해 방학엔 스펙 뭐 쌓지?</span>
             <span className="text-center text-[1.6rem] font-bold text-grey100 lg:pb-4 lg:text-[2.62rem]">
               목표를 향해 함께 모여보세요
 =======
           <div className="mb-16 flex flex-col md:mb-0 ">
+=======
+          <div className="mb-7 flex flex-col md:mb-0 lg:mb-16">
+>>>>>>> b55760a (fix: QA6 apply)
             <span className="text-center text-sm text-grey100 lg:text-right lg:text-xl">올해 방학엔 스펙 뭐 쌓지?</span>
             <span className="text-center text-[1.6rem] font-bold text-grey100 lg:pb-4 lg:text-[2.62rem]">
               목표를 향해 함께 모여요
@@ -62,11 +75,15 @@ export default function IntroComponent3() {
           <motion.div
             whileHover={{ scale: 1.1 }}
 <<<<<<< HEAD
+<<<<<<< HEAD
             className="flex h-[3rem] w-[15.5rem] cursor-pointer items-center justify-center gap-4 rounded-[3.75rem] bg-[#2F353C] text-[#fff] md:h-[4.43rem] md:w-[17.18rem] lg:mt-12"
           >
             <Link href={'https://bit.ly/3V5qBgT'}>
 =======
             className="mt-12 flex h-[3rem] w-[15.5rem] cursor-pointer items-center justify-center gap-4 rounded-[3.75rem] bg-[#2F353C] text-[#fff] md:h-[4.43rem] md:w-[17.18rem]"
+=======
+            className="flex h-[3rem] w-[15.5rem] cursor-pointer items-center justify-center gap-4 rounded-[3.75rem] bg-[#2F353C] text-[#fff] md:h-[4.43rem] md:w-[17.18rem] lg:mt-12"
+>>>>>>> b55760a (fix: QA6 apply)
           >
             <Link href={'https://linkit.oopy.io/'}>
 >>>>>>> 8144e1e (fix: 5차 QA 수정)
