@@ -21,7 +21,7 @@ export default function IntroComponent6() {
 
         <div className="flex h-full w-full flex-col lg:flex-row">
           {/* left */}
-          <div className="flex h-full items-center justify-center lg:w-1/2">
+          <div className="flex h-full w-full items-center justify-center lg:w-1/2 lg:justify-start">
             <div className="flex flex-col items-center lg:items-start lg:pb-20">
               <div className="w-[9rem] rounded-lg bg-grey20 p-1 text-sm lg:w-[10.75rem] lg:p-[0.6rem] lg:text-base">
                 1. 팀원 구인 경로 최소화

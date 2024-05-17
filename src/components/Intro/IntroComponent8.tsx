@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 export default function IntroComponent8() {
   return (
     <motion.div
-      className="bg-white flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center"
+      className=" bg-white flex h-screen min-h-screen w-full snap-mandatory snap-start snap-always flex-col items-center justify-start overflow-hidden overflow-x-auto bg-opacity-50 bg-cover bg-no-repeat py-20 lg:justify-center"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{
@@ -13,9 +13,9 @@ export default function IntroComponent8() {
         ease: 'easeOut',
       }}
     >
-      <div className="flex h-full w-full flex-col lg:flex-row">
+      <div className="flex h-full w-full flex-col lg:w-[1200px] lg:flex-row">
         {/* left */}
-        <div className="flex items-center justify-center lg:h-full lg:w-1/2">
+        <div className="flex items-center justify-center lg:h-full lg:w-1/2 lg:justify-start">
           <div className="flex flex-col items-center lg:items-start lg:pb-20">
             <div className="w-[9rem] rounded-lg bg-grey20 p-1 text-center text-sm lg:w-[9.75rem] lg:p-[0.6rem] lg:text-base">
               3. 편리한 정보 확인

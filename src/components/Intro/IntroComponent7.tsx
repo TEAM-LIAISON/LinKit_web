@@ -20,7 +20,7 @@ export default function IntroComponent7() {
       />
 
       <motion.div
-        className="z-50 flex flex-col lg:w-[1400px] lg:flex-row"
+        className="z-50 flex flex-col lg:w-[1200px] lg:flex-row"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -30,7 +30,7 @@ export default function IntroComponent7() {
         }}
       >
         {/* left */}
-        <div className="flex items-center justify-center lg:h-full lg:w-1/2">
+        <div className="lg: flex items-center justify-center lg:h-full lg:w-1/2 lg:justify-start">
           <div className=" flex flex-col items-center pb-8 lg:items-start lg:pb-20">
             <div className="w-[9rem] rounded-lg bg-grey20 p-1 text-center text-sm lg:w-[9.75rem] lg:p-[0.6rem] lg:text-base">
               2. 간결한 매칭 서비스
