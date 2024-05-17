@@ -6,7 +6,7 @@ export default function FooterComponent() {
   const router = useRouter()
 
   return (
-    <footer className="w-full pt-20 pb-20 px-8 lg:px-44 text-sm font-medium text-grey100">
+    <footer className="w-full px-8 pb-20 pt-20 text-sm font-medium text-grey100 lg:px-44">
       <Link href={'/'}>
         <Image src={'/assets/intro/footerLogo.svg'} width={169} height={31} alt="logo" className="w-24 lg:w-auto" />
       </Link>
@@ -22,14 +22,16 @@ export default function FooterComponent() {
           >
             문의하기 (매일 09:00 ~ 18:00)
           </span>
-          <span>커뮤니티</span>
+          <Link href={'https://bit.ly/4biOQ1Z'}>
+            <span>커뮤니티</span>
+          </Link>
           <Link href={'/#FAQ'}>FAQ</Link>
         </div>
         <span className="">ⓒ 2024. liaison All rights reserved.</span>
         <div className="flex gap-x-4 pt-2">
           <Image
             onClick={() => {
-              router.push('https://www.instagram.com/linkit_official/?igsh=MXRucng0aGE5ZXVoYw%3D%3D')
+              router.push('https://bit.ly/4bspBdG')
             }}
             src={'/assets/icons/instagram_dark.svg'}
             width={25}
@@ -39,7 +41,7 @@ export default function FooterComponent() {
           />
           <Image
             onClick={() => {
-              router.push('https://open.kakao.com/o/gee0u5kg')
+              router.push('https://bit.ly/4biOQ1Z')
             }}
             src={'/assets/icons/kakao_dark.svg'}
             width={25}

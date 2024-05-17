@@ -77,13 +77,13 @@ export default function IntroComponent4() {
           </div>
 
           <div className="flex w-full flex-col gap-2 pt-6 lg:flex-row">
-            <Link href={'https://linkit.oopy.io/'}>
+            <Link href={'https://bit.ly/3V5qBgT'}>
               <div className="flex w-full items-center justify-center rounded-md bg-grey20 bg-opacity-80 py-3 text-sm font-normal lg:h-[5.125rem] lg:w-[23rem] lg:text-lg">
                 1. 참여하고 싶은 프로젝트 찾아보기
               </div>
             </Link>
 
-            <Link href={'https://tally.so/r/w7dOW6'}>
+            <Link href={'https://bit.ly/4bitsK0'}>
               <div className="flex w-full items-center justify-center rounded-md bg-grey20 bg-opacity-80 py-3 text-sm font-normal lg:h-[5.125rem] lg:w-[23rem] lg:text-lg">
                 2. 1분만에 사전신청 하기
               </div>

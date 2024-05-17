@@ -129,7 +129,7 @@ export default function IntroComponentTemp() {
                 </motion.span>
               </div>
             </div>
-            <Link href={'https://tally.so/r/w7dOW6'}>
+            <Link href={'https://bit.ly/4bitsK0'}>
               <div className="flex h-[63px] w-[14.25rem] cursor-pointer items-center justify-center gap-4 rounded-[3.75rem] bg-[#2F353C] md:mt-8 lg:h-[4.4rem]">
                 <span className="text-sm text-[#fff] lg:text-lg">사전 신청하러 가기</span>
                 <Image src={'/assets/icons/right_arrow.svg'} width={17} height={1} alt="right_arrow" />
