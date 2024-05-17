@@ -25,10 +25,14 @@ export default function IntroComponent7() {
 
       <motion.div
 <<<<<<< HEAD
+<<<<<<< HEAD
         className="z-50 flex flex-col lg:w-[1200px] lg:flex-row"
 =======
         className="z-50 flex flex-col lg:w-[1400px] lg:flex-row"
 >>>>>>> 8144e1e (fix: 5차 QA 수정)
+=======
+        className="z-50 flex flex-col lg:w-[1200px] lg:flex-row"
+>>>>>>> e7e158f (fix: widthFix)
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -39,6 +43,9 @@ export default function IntroComponent7() {
       >
         {/* left */}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e7e158f (fix: widthFix)
         <div className="lg: flex items-center justify-center lg:h-full lg:w-1/2 lg:justify-start">
           <div className=" flex flex-col items-center pb-8 lg:items-start lg:pb-20">
             <div className="w-[9rem] rounded-lg bg-grey20 p-1 text-center text-sm lg:w-[9.75rem] lg:p-[0.6rem] lg:text-base">
