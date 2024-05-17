@@ -93,6 +93,7 @@ export default function IntroComponent3() {
             className="flex h-[3rem] w-[15.5rem] cursor-pointer items-center justify-center gap-4 rounded-[3.75rem] bg-[#2F353C] text-[#fff] md:h-[4.43rem] md:w-[17.18rem] lg:mt-12"
           >
             <Link href={'https://bit.ly/3V5qBgT'}>
+<<<<<<< HEAD
 =======
             className="mt-12 flex h-[3rem] w-[15.5rem] cursor-pointer items-center justify-center gap-4 rounded-[3.75rem] bg-[#2F353C] text-[#fff] md:h-[4.43rem] md:w-[17.18rem]"
 =======
@@ -101,6 +102,8 @@ export default function IntroComponent3() {
           >
             <Link href={'https://linkit.oopy.io/'}>
 >>>>>>> 8144e1e (fix: 5차 QA 수정)
+=======
+>>>>>>> 7a8581f (fix: linkDataFix)
               <span className="ml-4 text-sm font-medium md:text-base">7월에 진행되는 프로젝트 찾기</span>
             </Link>
             <Image src={'/assets/icons/right_arrow.svg'} width={17} height={1} alt="right arrow" />

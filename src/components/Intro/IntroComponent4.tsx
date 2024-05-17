@@ -90,20 +90,28 @@ export default function IntroComponent4() {
 
           <div className="flex w-full flex-col gap-2 pt-6 lg:flex-row">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <Link href={'https://bit.ly/3V5qBgT'}>
 =======
             <Link href={'https://linkit.oopy.io/'}>
 >>>>>>> 8144e1e (fix: 5차 QA 수정)
+=======
+            <Link href={'https://bit.ly/3V5qBgT'}>
+>>>>>>> 7a8581f (fix: linkDataFix)
               <div className="flex w-full items-center justify-center rounded-md bg-grey20 bg-opacity-80 py-3 text-sm font-normal lg:h-[5.125rem] lg:w-[23rem] lg:text-lg">
                 1. 참여하고 싶은 프로젝트 찾아보기
               </div>
             </Link>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             <Link href={'https://bit.ly/4bitsK0'}>
 =======
             <Link href={'https://tally.so/r/w7dOW6'}>
 >>>>>>> 8144e1e (fix: 5차 QA 수정)
+=======
+            <Link href={'https://bit.ly/4bitsK0'}>
+>>>>>>> 7a8581f (fix: linkDataFix)
               <div className="flex w-full items-center justify-center rounded-md bg-grey20 bg-opacity-80 py-3 text-sm font-normal lg:h-[5.125rem] lg:w-[23rem] lg:text-lg">
                 2. 1분만에 사전신청 하기
               </div>
