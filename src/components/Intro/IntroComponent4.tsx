@@ -8,7 +8,7 @@ export default function IntroComponent4() {
   const [countdown, setCountdown] = useState('')
 
   useEffect(() => {
-    const targetDate = new Date('2024-06-30T00:00:00').getTime() // 목표 날짜 설정 및 숫자로 변환
+    const targetDate = new Date('2024-07-12T00:00:00').getTime() // 목표 날짜 설정 및 숫자로 변환
     const interval = setInterval(() => {
       const now = new Date().getTime() // 현재 날짜를 숫자로 변환
       const difference = targetDate - now // 숫자형 Date 값들의 차이 계산
@@ -84,8 +84,8 @@ export default function IntroComponent4() {
       >
         <div className="flex h-auto w-[90%] flex-col items-center rounded-xl bg-[#fff] p-5 max-lg:mt-10 lg:w-[72.8rem]">
           <div className="flex flex-col items-center">
-            <h2 className="text-2xl font-bold lg:pt-3">사전 프로필 등록</h2>
-            <span className="pt-1 text-sm text-grey70">05월 15일부터 06월 30일까지</span>
+            <h2 className="pb-3 text-2xl font-bold lg:pt-3">사전 프로필 등록</h2>
+            {/* <span className="pt-1 text-sm text-grey70">06월 15일부터 07월 12일까지</span> */}
           </div>
 
           <div className="flex w-full flex-col gap-2 pt-6 lg:flex-row">
